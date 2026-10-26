@@ -2,8 +2,6 @@
 
 > Helps university students and beginner developers understand selected public GitHub repositories through document-grounded answers with source references.
 
-**Week 1 status:** project scope, README, source selection, evaluation plan and local folder structure prepared. Parts A/B files and authenticated GitHub publication remain pending. This repository contains planning only; the application has not been implemented and no evaluation results have been achieved.
-
 ## Problem Statement
 
 Students and beginner developers must find and interpret purpose, installation, prerequisite and contribution information across unfamiliar repository documentation. RepoLens proposes semantic retrieval and an LLM to answer paraphrased questions, combine selected passages and explain instructions with citations. Its value over keyword retrieval will be evaluated rather than assumed.
