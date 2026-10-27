@@ -85,8 +85,6 @@ The upstream documentation dataset is represented by URLs and metadata; its docu
 | W2 | V1 architecture and justification | Architecture PNG, 6 decisions and 12 traceability rows | Required files available in GitHub; linked editable Draw.io source still missing |
 | W3 onward | Implementation and evaluation | Data processing, retrieval, grounded answers, interface and measured evidence | Planned |
 
-The Week 1 planning and observation files are present; the format/supporting-file checklist below prevents claiming full lab compliance prematurely. Week 2 planning documents are present, while implementation and empirical validation remain future work.
-
 ## Proposed AI Approach and Scope
 
 Allowlisted Markdown/RST documentation -> cleaning and chunking -> embeddings and repository-filtered semantic retrieval -> LLM answer -> citation/scope checks -> simple web interface. Cross-repository installation comparisons retrieve evidence for each repository separately. Answers show repository, document, section and fixed source URL; missing evidence triggers explicit abstention. All technology choices remain provisional.
