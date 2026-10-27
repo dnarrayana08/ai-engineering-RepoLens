@@ -2,6 +2,23 @@
 
 > Helps university students and beginner developers understand selected public GitHub repositories through document-grounded answers with source references.
 
+**Current status (27 October 2026):** Week 1 materials and all four required Week 2 planning deliverables are available in this repository. The application, final benchmark and evaluation results are planned; there is no runnable RepoLens application yet. Some repository-format and supporting-file items remain open in the checklist below.
+
+## Project Documents
+
+| Topic | Document |
+|---|---|
+| Week 1 | [Project scope](docs/week1_project_scope.md) |
+| Week 1 | [Observation sheet - Markdown](docs/week1_observation_sheet.md) and [PDF with evidence screenshots](docs/week1_observation_sheet.pdf) |
+| Week 1 | [Conceptual system map and reflection - PDF](docs/week1_system_map.pdf) |
+| Week 2 | [Requirements specification](docs/week2_requirements.md) |
+| Week 2 | [Evaluation criteria](docs/week2_evaluation_criteria.md) |
+| Week 2 | [V1 architecture diagram](docs/week2_architecture_v1.png) |
+| Week 2 | [Architecture decisions and traceability](docs/week2_architecture_decisions.md) |
+| Data and evaluation | [Source manifest](data/source_manifest.json) and [initial evaluation plan](evaluation/plan.md) |
+
+The Week 1 observation sheet and system map examine **Claude**, the system analysed in Parts A/B. The Week 2 architecture describes the proposed **RepoLens** application. Observations about Claude are not RepoLens test results.
+
 ## Problem Statement
 
 Students and beginner developers must find and interpret purpose, installation, prerequisite and contribution information across unfamiliar repository documentation. RepoLens proposes semantic retrieval and an LLM to answer paraphrased questions, combine selected passages and explain instructions with citations. Its value over keyword retrieval will be evaluated rather than assumed.
@@ -52,19 +69,23 @@ Verified by successful HTTP retrieval on 22 October 2026. [Machine-readable mani
 - **streamlit/streamlit: Apache-2.0** - [verified repository license](https://raw.githubusercontent.com/streamlit/streamlit/f478c9783be8099f1d394d02dea77bd0697d93ea/LICENSE).
 - **scikit-learn/scikit-learn: BSD-3-Clause** - [verified repository license](https://raw.githubusercontent.com/scikit-learn/scikit-learn/718eedb7af8678255de080d4748d9f67e321ba41/COPYING).
 
-Only URLs and metadata are committed in Week 1. Before later redistribution, check file-level exceptions and preserve the applicable license, copyright, disclaimer and attribution/change notices. External links and assets are not included automatically; record a URL if permission is uncertain. See the [project scope](docs/week1_project_scope.md) for collection limits.
+The upstream documentation dataset is represented by URLs and metadata; its document copies have not been committed. Before later redistribution, check file-level exceptions and preserve the applicable license, copyright, disclaimer and attribution/change notices. External links and assets are not included automatically; record a URL if permission is uncertain. See the [project scope](docs/week1_project_scope.md) for collection limits.
 
 ## Weekly Progress
 
 | Week | Focus | Deliverable | Status |
 |---|---|---|---|
-| W1 | Project scoping (C1/C2 preparation) | README, scope, source manifest, evaluation plan | Complete locally |
-| W1 | Repository setup (C3) | Required folders and .gitignore | Prepared locally; remote check/create/push pending authentication |
-| W1 | Observation sheet and conceptual system map (Parts A/B) | docs/week1_observation_sheet.md; docs/week1_system_map.png | Pending: actual group files not provided |
-| W1 | Final Week 1 submission | Verify public GitHub contents and submit repository URL | Pending |
-| W2 onward | Requirements, design, implementation and evaluation | To be refined against course schedule | Planned |
+| W1 | Project scoping | README, project scope, source manifest and initial evaluation plan | Available in GitHub |
+| W1 | Analyse an existing AI system | Observation sheet in Markdown and PDF | Uploaded; PDF includes evidence screenshots; Markdown image assets still need uploading |
+| W1 | Conceptual system map | System map and reflection in PDF | Uploaded; required PNG export still pending |
+| W1 | Repository setup | Public GitHub repository and planning files | Repository exists; missing folders and .gitignore listed below |
+| W1 | Course portal submission | Repository URL | Not verified in this repository |
+| W2 | Requirements and application scope | Section 0 framing, 7 FRs, 5 NFRs and 5 Responsible AI requirements | Planning document available in GitHub |
+| W2 | Evaluation criteria | 12 criteria, proposed metrics/thresholds and evaluation protocol | Planning document available in GitHub; tests not run |
+| W2 | V1 architecture and justification | Architecture PNG, 6 decisions and 12 traceability rows | Required files available in GitHub; linked editable Draw.io source still missing |
+| W3 onward | Implementation and evaluation | Data processing, retrieval, grounded answers, interface and measured evidence | Planned |
 
-**Week 1 overall is not complete.** The absent Part A/B files have not been replaced with fabricated content.
+The Week 1 planning and observation files are present; the format/supporting-file checklist below prevents claiming full lab compliance prematurely. Week 2 planning documents are present, while implementation and empirical validation remain future work.
 
 ## Proposed AI Approach and Scope
 
@@ -74,27 +95,38 @@ In scope: selected public documentation, natural-language Q&A, citations, a simp
 
 ## Repository Structure
 
+Current tracked files:
+
 ```text
-ai-engineering-repolens/
+ai-engineering-RepoLens/
 ├── README.md
-├── .gitignore
-├── docs/
-│   └── week1_project_scope.md
 ├── data/
-│   ├── .gitkeep
 │   └── source_manifest.json
-├── src/.gitkeep
-├── notebooks/.gitkeep
-├── evaluation/
-│   └── plan.md
-└── prompts/.gitkeep
+├── docs/
+│   ├── week1_observation_sheet.md
+│   ├── week1_observation_sheet.pdf
+│   ├── week1_project_scope.md
+│   ├── week1_system_map.pdf
+│   ├── week2_requirements.md
+│   ├── week2_evaluation_criteria.md
+│   ├── week2_architecture_v1.png
+│   └── week2_architecture_decisions.md
+└── evaluation/
+    └── plan.md
 ```
 
-Required but **absent until supplied**: `docs/week1_observation_sheet.md` and `docs/week1_system_map.png`. These must come from the actual Parts A/B work, not a RepoLens architecture invented for this task.
+### Remaining Repository and Submission Items
+
+- [ ] Export the existing Week 1 system map as `docs/week1_system_map.png`, as required by the lab. The PDF is already available above.
+- [ ] Add `docs/week1_observation_assets/evidence_1.jpg`, `evidence_2.jpg` and `evidence_3.jpg` to restore the observation Markdown's embedded screenshots. The observation PDF currently preserves them.
+- [ ] Upload `docs/week2_architecture_v1.drawio` so the editable-source links in the Week 2 documents resolve. The required architecture PNG is already present.
+- [ ] Add the planned `src/`, `notebooks/` and `prompts/` directories, using `.gitkeep` files while empty.
+- [ ] Add `.gitignore` rules for credentials, `.env` files, virtual environments, caches, raw document copies and generated indices/logs before implementation.
+- [ ] Confirm the actual course portal submission. File presence in GitHub does not establish that submission occurred.
 
 ## Planned Evaluation
 
-Prepare 6 development questions and freeze 30 test questions (24 answerable, 6 unsupported). Annotate reference answers and required source passages. Compare semantic retrieval against BM25 on the same sources/chunks; compare RAG explanations against the same generator with BM25 context. Measure Recall@5, full answer correctness, citation accuracy, groundedness, abstention and end-to-end latency. Preliminary targets and the full protocol are in [evaluation/plan.md](evaluation/plan.md). There are no measured results yet.
+Prepare 6 development questions and freeze 30 test questions (24 answerable, 6 unsupported). Annotate reference answers and required source passages. Compare semantic retrieval against BM25 on the same sources/chunks; compare RAG explanations against the same generator with BM25 context. Measure Recall@5, full answer correctness, citation accuracy, groundedness, abstention and end-to-end latency. The [initial evaluation plan](evaluation/plan.md) records the Week 1 design. The [Week 2 evaluation criteria](docs/week2_evaluation_criteria.md) refine the acceptance rules, repeat-run scoring, privacy/safety checks, failure handling and proposed cost cap; use those criteria for the later evaluation. There are no measured results yet.
 
 ## References
 
