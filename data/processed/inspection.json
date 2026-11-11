@@ -1,0 +1,173 @@
+[
+  {
+    "bytes": 22228,
+    "characters": 22011,
+    "fenced_blocks": 12,
+    "heading_count": 29,
+    "headings_preview": [
+      "Sponsors",
+      "Keystone Sponsor",
+      "Gold Sponsors",
+      "Silver Sponsors",
+      "Opinions",
+      "FastAPI mini documentary"
+    ],
+    "id": "D1",
+    "limitations": "Source markup retained; linked assets/includes not fetched; RST directives never executed.",
+    "lines": 533,
+    "non_ascii_characters": 106,
+    "preview": "<p align=\"center\">\n  <a href=\"https://fastapi.tiangolo.com\"><img src=\"https://fastapi.tiangolo.com/img/logo-margin/logo-teal.png\" alt=\"FastAPI\"></a>\n</p>\n<p align=\"center\">\n    <em>FastAPI framework, high performance, easy to learn, fast to code, ready for production</em>\n</p>\n<p align=\"center\">\n<a href=\"https://github.com/fastapi/fastapi/actions?query=workflow%3ATest+event%3Apush+branch%3Amaster\">\n    <img src=\"http",
+    "relative_path": "data/raw/fastapi/fastapi/README.md",
+    "repository": "fastapi/fastapi",
+    "source_sha256": "9b44160901909b924c7520227f5cdb44f7785560957b73987ff12379b3f82faa"
+  },
+  {
+    "bytes": 7464,
+    "characters": 7458,
+    "fenced_blocks": 3,
+    "heading_count": 5,
+    "headings_preview": [
+      "Tutorial - User Guide { #tutorial-user-guide }",
+      "Run the code { #run-the-code }",
+      "Install FastAPI { #install-fastapi }",
+      "AI Agent Skills { #ai-agent-skills }",
+      "Advanced User Guide { #advanced-user-guide }"
+    ],
+    "id": "D2",
+    "limitations": "Source markup retained; linked assets/includes not fetched; RST directives never executed.",
+    "lines": 141,
+    "non_ascii_characters": 2,
+    "preview": "# Tutorial - User Guide { #tutorial-user-guide }\n\nThis tutorial shows you how to use **FastAPI** with most of its features, step by step.\n\nEach section gradually builds on the previous ones, but it's structured to separate topics, so that you can go directly to any specific one to solve your specific API needs.\n\nIt is also built to work as a future reference so you can come back and see exactly what you need.\n\n## Run",
+    "relative_path": "data/raw/fastapi/fastapi/docs/en/docs/tutorial/index.md",
+    "repository": "fastapi/fastapi",
+    "source_sha256": "22d619c9497c8e88094fdba2b297c91ed29b21459b658a3586ae39a95fd65335"
+  },
+  {
+    "bytes": 271,
+    "characters": 271,
+    "fenced_blocks": 0,
+    "heading_count": 2,
+    "headings_preview": [
+      "Contributing",
+      "Developing"
+    ],
+    "id": "D3",
+    "limitations": "Source markup retained; linked assets/includes not fetched; RST directives never executed.",
+    "lines": 7,
+    "non_ascii_characters": 0,
+    "preview": "# Contributing\n\nFirst, you might want to see the basic ways to [help FastAPI and get help](help-fastapi.md).\n\n## Developing\n\nTo contribute code to the project, please follow the guidelines in [tiangolo.com - Contributing](https://tiangolo.com/open-source/contributing/).\n",
+    "relative_path": "data/raw/fastapi/fastapi/docs/en/docs/contributing.md",
+    "repository": "fastapi/fastapi",
+    "source_sha256": "6dc18b05e194e864a9fd0353ae68bf89d66a531517306a38687f7b2d1b577126"
+  },
+  {
+    "bytes": 7008,
+    "characters": 6965,
+    "fenced_blocks": 4,
+    "heading_count": 12,
+    "headings_preview": [
+      "Welcome to Streamlit 👋",
+      "What is Streamlit?",
+      "Why choose Streamlit?",
+      "Installation",
+      "Quickstart",
+      "A little example"
+    ],
+    "id": "D4",
+    "limitations": "Source markup retained; linked assets/includes not fetched; RST directives never executed.",
+    "lines": 150,
+    "non_ascii_characters": 22,
+    "preview": "<br>\n\n<img src=\"https://user-images.githubusercontent.com/7164864/217935870-c0bc60a3-6fc0-4047-b011-7b4c59488c91.png\" alt=\"Streamlit logo\" style=\"margin-top:50px\"></img>\n\n# Welcome to Streamlit 👋\n\n**A faster way to build and share data apps.**\n\n## What is Streamlit?\n\nStreamlit lets you transform Python scripts into interactive web apps in minutes, instead of weeks. Build dashboards, generate reports, or create chat a",
+    "relative_path": "data/raw/streamlit/streamlit/README.md",
+    "repository": "streamlit/streamlit",
+    "source_sha256": "45b271be0490145de6b0c245e2dc0ee5518b38f07eab5bc2419dd2c3923cd87e"
+  },
+  {
+    "bytes": 27548,
+    "characters": 27536,
+    "fenced_blocks": 31,
+    "heading_count": 54,
+    "headings_preview": [
+      "Contributing to Streamlit",
+      "Ways to contribute",
+      "Report a bug",
+      "Request a feature",
+      "Help improve existing issues and specs",
+      "Extend the Streamlit ecosystem"
+    ],
+    "id": "D5",
+    "limitations": "Source markup retained; linked assets/includes not fetched; RST directives never executed.",
+    "lines": 594,
+    "non_ascii_characters": 5,
+    "preview": "# Contributing to Streamlit\n\nThanks for your interest in helping improve Streamlit! 🎉\n\n**If you are looking for Streamlit's documentation, go here instead: <https://docs.streamlit.io>**\n\n> [!IMPORTANT]\n> We have paused accepting pull requests from outside the Streamlit maintainer team.\n> AI coding tools have increased PR volume beyond what we can review sustainably, while detailed\n> issues give maintainers a more eff",
+    "relative_path": "data/raw/streamlit/streamlit/CONTRIBUTING.md",
+    "repository": "streamlit/streamlit",
+    "source_sha256": "b101612cadc408d297d342aac0ab3be4a8ad9d016b6699ef4a257f1d44109a76"
+  },
+  {
+    "bytes": 7676,
+    "characters": 7676,
+    "fenced_blocks": 0,
+    "heading_count": 19,
+    "headings_preview": [
+      "Installation",
+      "Dependencies",
+      "User installation",
+      "Changelog",
+      "Development",
+      "Important links"
+    ],
+    "id": "D6",
+    "limitations": "Source markup retained; linked assets/includes not fetched; RST directives never executed.",
+    "lines": 217,
+    "non_ascii_characters": 0,
+    "preview": ".. -*- mode: rst -*-\n\n|GitHubActions| |Codecov| |CircleCI| |Nightly wheels| |Ruff| |PythonVersion| |PyPI| |DOI| |Benchmark|\n\n\n.. |GitHubActions| image:: https://github.com/scikit-learn/scikit-learn/actions/workflows/unit-tests.yml/badge.svg?\n   :target: https://github.com/scikit-learn/scikit-learn/actions/workflows/unit-tests.yml?query=branch%3Amain\n\n.. |CircleCI| image:: https://circleci.com/gh/scikit-learn/scikit-l",
+    "relative_path": "data/raw/scikit-learn/scikit-learn/README.rst",
+    "repository": "scikit-learn/scikit-learn",
+    "source_sha256": "3e0c151adde02aa2501477a7c2a17a87888abe58178c09a2a8eff794bbee3221"
+  },
+  {
+    "bytes": 14525,
+    "characters": 14505,
+    "fenced_blocks": 0,
+    "heading_count": 15,
+    "headings_preview": [
+      "Installing scikit-learn",
+      "Installing the latest release",
+      "Third party distributions of scikit-learn",
+      "Alpine Linux",
+      "Arch Linux",
+      "Debian/Ubuntu"
+    ],
+    "id": "D7",
+    "limitations": "Source markup retained; linked assets/includes not fetched; RST directives never executed.",
+    "lines": 426,
+    "non_ascii_characters": 10,
+    "preview": ".. _installation-instructions:\n\n=======================\nInstalling scikit-learn\n=======================\n\nThere are different ways to install scikit-learn:\n\n* :ref:`Install the latest official release <install_official_release>`. This\n  is the best approach for most users. It will provide a stable version\n  and pre-built packages are available for most platforms.\n\n* Install the version of scikit-learn provided by your",
+    "relative_path": "data/raw/scikit-learn/scikit-learn/doc/install.rst",
+    "repository": "scikit-learn/scikit-learn",
+    "source_sha256": "270cae08f287cd918f6ca9212c20b6b0984195e742369cb8c43136c524eff07d"
+  },
+  {
+    "bytes": 71320,
+    "characters": 71305,
+    "fenced_blocks": 0,
+    "heading_count": 30,
+    "headings_preview": [
+      "Contributing",
+      "Ways to contribute",
+      "New Contributors",
+      "Automated Contributions Policy",
+      "Licensing your contribution",
+      "Submitting a bug report or a feature request"
+    ],
+    "id": "D8",
+    "limitations": "Source markup retained; linked assets/includes not fetched; RST directives never executed.",
+    "lines": 1665,
+    "non_ascii_characters": 6,
+    "preview": ".. _contributing:\n\n============\nContributing\n============\n\n.. raw:: html\n\n    <div style=\"display: none;\">\n        ### ⚠️ NOTE FOR AI TOOLS AND THEIR USERS: Opening a PR on scikit-learn requires\n        **human judgment, contextual understanding**, and **familiarity with\n        scikit-learn’s structure and goals**. It is **not suitable for automatic\n        processing** by AI tools or casual code assistant usage. 🔒 ",
+    "relative_path": "data/raw/scikit-learn/scikit-learn/doc/developers/contributing.rst",
+    "repository": "scikit-learn/scikit-learn",
+    "source_sha256": "e329bebf3986279ede0fc39dac46b36fd9e294c938ded19376481049824ac50d"
+  }
+]

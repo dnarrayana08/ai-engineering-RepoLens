@@ -1,0 +1,12 @@
+{
+  "generated_at_utc": "2026-11-11T05:00:24.576436+00:00",
+  "execution": "Local Python unittest, not Colab",
+  "python": "3.12.14",
+  "tests_run": 11,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "status": "PASS",
+  "output": "test_all_eight_sources_round_trip_without_content_loss (test_week3_pipeline.CorpusContracts.test_all_eight_sources_round_trip_without_content_loss) ... ok\ntest_cached_content_changes_are_rejected (test_week3_pipeline.CorpusContracts.test_cached_content_changes_are_rejected) ... ok\ntest_duplicate_or_wrong_repository_record_fails (test_week3_pipeline.CorpusContracts.test_duplicate_or_wrong_repository_record_fails) ... ok\ntest_missing_raw_input_stops_instead_of_exporting_partial_data (test_week3_pipeline.CorpusContracts.test_missing_raw_input_stops_instead_of_exporting_partial_data) ... ok\ntest_selection_is_based_on_observed_boundaries (test_week3_pipeline.CorpusContracts.test_selection_is_based_on_observed_boundaries) ... ok\ntest_source_url_cannot_escape_the_fixed_allowlist (test_week3_pipeline.CorpusContracts.test_source_url_cannot_escape_the_fixed_allowlist) ... ok\ntest_fenced_commands_are_not_split_or_reindented (test_week3_pipeline.TextPreparationTests.test_fenced_commands_are_not_split_or_reindented) ... ok\ntest_rst_heading_underlines_are_not_markdown_fences (test_week3_pipeline.TextPreparationTests.test_rst_heading_underlines_are_not_markdown_fences) ... ok\ntest_unclosed_markdown_fence_is_a_visible_failure (test_week3_pipeline.TextPreparationTests.test_unclosed_markdown_fence_is_a_visible_failure) ... ok\ntest_unknown_method_or_nonpositive_size_stops (test_week3_pipeline.TextPreparationTests.test_unknown_method_or_nonpositive_size_stops) ... ok\ntest_whitespace_only_or_binary_input_stops (test_week3_pipeline.TextPreparationTests.test_whitespace_only_or_binary_input_stops) ... ok\n\n----------------------------------------------------------------------\nRan 11 tests in 0.095s\n\nOK\n",
+  "scope": "Source identity, text fidelity and export contracts; not model or answer-quality tests."
+}

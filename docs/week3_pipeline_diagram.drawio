@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" type="device">
+  <diagram id="repolens-week3" name="Executed V1 data pipeline">
+    <mxGraphModel page="1" pageWidth="1800" pageHeight="1490" grid="1" gridSize="10">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="&lt;b&gt;RepoLens Executed V1 Data Pipeline&lt;/b&gt;" style="text;html=1;fontSize=39;align=left;" vertex="1" parent="1">
+          <mxGeometry x="60" y="30" width="1670" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="subtitle" value="Topic 3 | Pathway A adapted for Markdown / RST | Local execution verified; no Colab run claimed" style="text;html=1;fontSize=22;align=left;" vertex="1" parent="1">
+          <mxGeometry x="60" y="90" width="1670" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="S" value="&lt;b&gt;Approved sources&lt;/b&gt;&lt;br&gt;&lt;br&gt;8 fixed-commit documents&lt;br&gt;3 repositories; original URLs&lt;br&gt;FR2 / FR3 / RAI5" style="rounded=1;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;spacing=18;fontSize=21;fillColor=#EAF5EF;strokeColor=#5C9974;" vertex="1" parent="1">
+          <mxGeometry x="60" y="210" width="350" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="I" value="&lt;b&gt;Ingest and verify&lt;/b&gt;&lt;br&gt;&lt;br&gt;Read-only pinned downloads&lt;br&gt;8/8 source hashes match&lt;br&gt;Keep raw bytes outside Git" style="rounded=1;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;spacing=18;fontSize=21;fillColor=#EDF4FC;strokeColor=#668CB7;" vertex="1" parent="1">
+          <mxGeometry x="500" y="210" width="350" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="N" value="&lt;b&gt;Inspect&lt;/b&gt;&lt;br&gt;&lt;br&gt;UTF-8 content + previews&lt;br&gt;Markdown / RST headings&lt;br&gt;Commands and markup visible" style="rounded=1;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;spacing=18;fontSize=21;fillColor=#EDF4FC;strokeColor=#668CB7;" vertex="1" parent="1">
+          <mxGeometry x="940" y="210" width="350" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="P" value="&lt;b&gt;Prepare&lt;/b&gt;&lt;br&gt;&lt;br&gt;Normalise newlines only&lt;br&gt;Paragraph-aware; target 500&lt;br&gt;Keep blocks; no execution" style="rounded=1;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;spacing=18;fontSize=21;fillColor=#EDF4FC;strokeColor=#668CB7;" vertex="1" parent="1">
+          <mxGeometry x="1380" y="210" width="350" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="C" value="&lt;b&gt;Part B comparison selects configuration&lt;/b&gt;&lt;br&gt;&lt;br&gt;Fixed: 320 chunks; 17 boundaries inside fenced blocks&lt;br&gt;Paragraph-aware: 350 chunks; 0 fence cuts; 0 mid-line cuts&lt;br&gt;Accepted: 49 chunks above target; maximum 2,749 characters&lt;br&gt;Use the same chosen configuration in Part C" style="rounded=1;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;spacing=18;fontSize=21;fillColor=#EAF5EF;strokeColor=#5C9974;" vertex="1" parent="1">
+          <mxGeometry x="940" y="520" width="790" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="F" value="&lt;b&gt;Failure points and responses&lt;/b&gt;&lt;br&gt;&lt;br&gt;1. Missing source / wrong SHA-256 -&amp;gt; stop; do not refresh silently&lt;br&gt;2. Bad UTF-8 / unclosed Markdown fence -&amp;gt; stop and inspect&lt;br&gt;Output or lineage validation failure also stops the run&lt;br&gt;Do not mistake RST underline headings for Markdown fences" style="rounded=1;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;spacing=18;fontSize=21;fillColor=#FFF0F0;strokeColor=#BD7272;" vertex="1" parent="1">
+          <mxGeometry x="60" y="520" width="790" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="O" value="&lt;b&gt;Store prepared data&lt;/b&gt;&lt;br&gt;&lt;br&gt;JSONL with stable record IDs&lt;br&gt;Repository, commit, URL, hash&lt;br&gt;Section + exact line/span" style="rounded=1;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;spacing=18;fontSize=21;fillColor=#EDF4FC;strokeColor=#668CB7;" vertex="1" parent="1">
+          <mxGeometry x="1380" y="900" width="350" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="V" value="&lt;b&gt;Validate&lt;/b&gt;&lt;br&gt;&lt;br&gt;Non-empty; unique IDs&lt;br&gt;Read-back equals export&lt;br&gt;Exact spans; no content loss" style="rounded=1;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;spacing=18;fontSize=21;fillColor=#FFF3DD;strokeColor=#BB8B3A;" vertex="1" parent="1">
+          <mxGeometry x="940" y="900" width="350" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="L" value="&lt;b&gt;Record lineage&lt;/b&gt;&lt;br&gt;&lt;br&gt;8 sources -&amp;gt; combined output&lt;br&gt;Output hash + record ranges&lt;br&gt;License and change notices" style="rounded=1;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;spacing=18;fontSize=21;fillColor=#F2EDFA;strokeColor=#9075B3;" vertex="1" parent="1">
+          <mxGeometry x="500" y="900" width="350" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="R" value="&lt;b&gt;Rerun and compare&lt;/b&gt;&lt;br&gt;&lt;br&gt;Two pipeline runs: PASS&lt;br&gt;Same bytes / config / mappings&lt;br&gt;Part B equals Part C" style="rounded=1;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;spacing=18;fontSize=21;fillColor=#FFF3DD;strokeColor=#BB8B3A;" vertex="1" parent="1">
+          <mxGeometry x="60" y="900" width="350" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" value="bytes" style="edgeStyle=none;html=1;endArrow=block;strokeWidth=2;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=1.0;exitY=0.5;entryX=0.0;entryY=0.5;strokeColor=#486177;" edge="1" parent="1" source="S" target="I">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" value="verified" style="edgeStyle=none;html=1;endArrow=block;strokeWidth=2;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=1.0;exitY=0.5;entryX=0.0;entryY=0.5;strokeColor=#486177;" edge="1" parent="1" source="I" target="N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" value="text" style="edgeStyle=none;html=1;endArrow=block;strokeWidth=2;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=1.0;exitY=0.5;entryX=0.0;entryY=0.5;strokeColor=#486177;" edge="1" parent="1" source="N" target="P">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" value="compare in Part B" style="edgeStyle=none;html=1;endArrow=block;strokeWidth=2;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1.0;entryX=0.22151898734177214;entryY=0.0;dashed=1;strokeColor=#8C6BA7;" edge="1" parent="1" source="N" target="C">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" value="chosen settings" style="edgeStyle=none;html=1;endArrow=block;strokeWidth=2;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.7784810126582279;exitY=0.0;entryX=0.5;entryY=1.0;dashed=1;strokeColor=#8C6BA7;" edge="1" parent="1" source="C" target="P">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" value="350 source-traceable chunks" style="edgeStyle=none;html=1;endArrow=block;strokeWidth=2;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=1.0;exitY=0.5;entryX=0.5;entryY=0.0;strokeColor=#486177;" edge="1" parent="1" source="P" target="O">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1765" y="300" />
+              <mxPoint x="1765" y="820" />
+              <mxPoint x="1555" y="820" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e7" value="read back" style="edgeStyle=none;html=1;endArrow=block;strokeWidth=2;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.0;exitY=0.5;entryX=1.0;entryY=0.5;strokeColor=#486177;" edge="1" parent="1" source="O" target="V">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" value="checked" style="edgeStyle=none;html=1;endArrow=block;strokeWidth=2;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.0;exitY=0.5;entryX=1.0;entryY=0.5;strokeColor=#486177;" edge="1" parent="1" source="V" target="L">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" value="run again" style="edgeStyle=none;html=1;endArrow=block;strokeWidth=2;fontSize=18;labelBackgroundColor=#FFFFFF;exitX=0.0;exitY=0.5;entryX=1.0;entryY=0.5;strokeColor=#486177;" edge="1" parent="1" source="L" target="R">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="notes" value="&lt;b&gt;Saved evidence and scope&lt;/b&gt;&lt;br&gt;&lt;br&gt;Part B: data/processed/prepared_text.jsonl + data/week3_manifest.json&lt;br&gt;Part C: data/pipeline_v1/documents/ prepared export + pipeline_manifest.json + repeatability_report.json&lt;br&gt;Keep source licenses / NOTICES and the modification notice with derived text. Raw source files stay ignored.&lt;br&gt;Solid arrows: executed data flow. Dashed arrows: observed comparison informs the shared configuration.&lt;br&gt;No embeddings, vector index, model training, answer generation, deployment or full quality assessment in this lab." style="rounded=1;html=1;whiteSpace=wrap;align=left;spacing=18;fontSize=22;fillColor=#F5F7FA;strokeColor=#CBD5DF;" vertex="1" parent="1">
+          <mxGeometry x="60" y="1190" width="1670" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="footer" value="Measured boundary counts describe this snapshot only; passing checks does not establish downstream answer accuracy." style="text;html=1;fontSize=20;align=left;" vertex="1" parent="1">
+          <mxGeometry x="60" y="1430" width="1670" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,45 @@
+# Credentials and local secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+credentials*.json
+*service-account*.json
+secrets/
+.secrets/
+.aws/
+# Python / notebook environments and caches
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.cache/
+# Reacquired upstream bytes and later generated model stores
+data/raw/
+data/embeddings/
+data/index/
+chroma_db/
+faiss_index/
+# Curated Week 3 prepared exports and manifests are intentionally tracked.
+# Review later generated results before committing them.
+*.log
+logs/
+evaluation/runs/
+week3_data_exports.zip
+# Development outputs
+node_modules/
+dist/
+build/
+*.egg-info/
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

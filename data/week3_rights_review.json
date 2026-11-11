@@ -1,0 +1,61 @@
+[
+  {
+    "repository": "fastapi/fastapi",
+    "commit": "4bdfbe4513084b19e22421ce1f916d8c1ac462a0",
+    "license": "MIT",
+    "license_url": "https://raw.githubusercontent.com/fastapi/fastapi/4bdfbe4513084b19e22421ce1f916d8c1ac462a0/LICENSE",
+    "license_sha256": "4ec89ffc81485b97fec584b2d4a961032eeffe834453894fd9c1274906cc744e",
+    "notice_paths_in_tree": [],
+    "root_notices_copied": [],
+    "checked_on": "2026-11-11",
+    "review_scope": "Pinned repository license, source file identity and root notices; no linked assets or external pages admitted",
+    "retained_files": [
+      {
+        "path": "data/third_party/fastapi/LICENSE",
+        "sha256": "4ec89ffc81485b97fec584b2d4a961032eeffe834453894fd9c1274906cc744e"
+      }
+    ]
+  },
+  {
+    "repository": "streamlit/streamlit",
+    "commit": "f478c9783be8099f1d394d02dea77bd0697d93ea",
+    "license": "Apache-2.0",
+    "license_url": "https://raw.githubusercontent.com/streamlit/streamlit/f478c9783be8099f1d394d02dea77bd0697d93ea/LICENSE",
+    "license_sha256": "c95bae1d1ce0235ecccd3560b772ec1efb97f348a79f0fbe0a634f0c2ccefe2c",
+    "notice_paths_in_tree": [
+      "NOTICES"
+    ],
+    "root_notices_copied": [
+      "NOTICES"
+    ],
+    "checked_on": "2026-11-11",
+    "review_scope": "Pinned repository license, source file identity and root notices; no linked assets or external pages admitted",
+    "retained_files": [
+      {
+        "path": "data/third_party/streamlit/LICENSE",
+        "sha256": "c95bae1d1ce0235ecccd3560b772ec1efb97f348a79f0fbe0a634f0c2ccefe2c"
+      },
+      {
+        "path": "data/third_party/streamlit/NOTICES",
+        "sha256": "347b9560725ea8772029fdcb2735750b185edade727c556563b30b71bc2de1a8"
+      }
+    ]
+  },
+  {
+    "repository": "scikit-learn/scikit-learn",
+    "commit": "718eedb7af8678255de080d4748d9f67e321ba41",
+    "license": "BSD-3-Clause",
+    "license_url": "https://raw.githubusercontent.com/scikit-learn/scikit-learn/718eedb7af8678255de080d4748d9f67e321ba41/COPYING",
+    "license_sha256": "50d6a9d340f19ab355609917993114daf5f47e3161067bcf34955bbd05cd9cb0",
+    "notice_paths_in_tree": [],
+    "root_notices_copied": [],
+    "checked_on": "2026-11-11",
+    "review_scope": "Pinned repository license, source file identity and root notices; no linked assets or external pages admitted",
+    "retained_files": [
+      {
+        "path": "data/third_party/scikit-learn/COPYING",
+        "sha256": "50d6a9d340f19ab355609917993114daf5f47e3161067bcf34955bbd05cd9cb0"
+      }
+    ]
+  }
+]

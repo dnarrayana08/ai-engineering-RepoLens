@@ -1,0 +1,23 @@
+{
+  "checks": [
+    "sources",
+    "configuration",
+    "validation",
+    "source_output_mapping",
+    "implementation_sha256"
+  ],
+  "environment": {
+    "colab": false,
+    "python": "3.12.14",
+    "system": "Darwin"
+  },
+  "first_generated_at_utc": "2026-11-11T04:52:08.078529+00:00",
+  "limitation": "Same-environment repeatability smoke check; not cross-environment reproducibility or answer-quality proof.",
+  "part_b_matches_part_c": true,
+  "prepared_sha256": "9a71abd2df1a530c6b58d06a41ccf329b23132310421a7766a661ad020834b66",
+  "records": 350,
+  "run_count": 2,
+  "second_generated_at_utc": "2026-11-11T04:52:08.114589+00:00",
+  "sources": 8,
+  "status": "PASS"
+}

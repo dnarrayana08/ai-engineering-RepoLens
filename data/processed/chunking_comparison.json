@@ -1,0 +1,221 @@
+{
+  "configuration": {
+    "cleaning": "UTF-8 strict; normalize CRLF/CR to LF; preserve indentation, links and directives as inert text",
+    "overlap": 0,
+    "paragraph_policy": "Do not split atomic paragraphs or fenced blocks; 500 characters is a soft target",
+    "target_characters": 500
+  },
+  "decision_rule": "Prefer fewer boundaries inside fenced blocks, then fewer mid-line boundaries; otherwise retain simple fixed splitting.",
+  "per_source": [
+    {
+      "boundaries_inside_fences": 3,
+      "chunk_count": 45,
+      "maximum_characters": 500,
+      "median_characters": 500,
+      "method": "fixed",
+      "mid_line_boundaries": 42,
+      "minimum_characters": 11,
+      "oversize_chunks": 0,
+      "preview": "<p align=\"center\">\n  <a href=\"https://fastapi.tiangolo.com\"><img src=\"https://fastapi.tiangolo.com/img/logo-margin/logo-teal.png\" alt=\"FastAPI\"></a>\n</p>\n<p align=\"center\">\n    <em>FastAPI framework, high performance, easy to learn, fast to code, ready for production</em>\n</p>\n<p align=\"center\">\n<a href=\"https://github.com/fastapi/fastapi/actions?query=workflow%3ATest+event%3Apush+branch%3Amaster\">\n    <img src=\"http",
+      "source_id": "D1"
+    },
+    {
+      "boundaries_inside_fences": 0,
+      "chunk_count": 45,
+      "maximum_characters": 1569,
+      "median_characters": 447,
+      "method": "paragraph-aware",
+      "mid_line_boundaries": 0,
+      "minimum_characters": 20,
+      "oversize_chunks": 9,
+      "preview": "<p align=\"center\">\n  <a href=\"https://fastapi.tiangolo.com\"><img src=\"https://fastapi.tiangolo.com/img/logo-margin/logo-teal.png\" alt=\"FastAPI\"></a>\n</p>\n<p align=\"center\">\n    <em>FastAPI framework, high performance, easy to learn, fast to code, ready for production</em>\n</p>\n<p align=\"center\">\n<a href=\"https://github.com/fastapi/fastapi/actions?query=workflow%3ATest+event%3Apush+branch%3Amaster\">\n    <img src=\"http",
+      "source_id": "D1"
+    },
+    {
+      "boundaries_inside_fences": 6,
+      "chunk_count": 15,
+      "maximum_characters": 500,
+      "median_characters": 500,
+      "method": "fixed",
+      "mid_line_boundaries": 14,
+      "minimum_characters": 458,
+      "oversize_chunks": 0,
+      "preview": "# Tutorial - User Guide { #tutorial-user-guide }\n\nThis tutorial shows you how to use **FastAPI** with most of its features, step by step.\n\nEach section gradually builds on the previous ones, but it's structured to separate topics, so that you can go directly to any specific one to solve your specific API needs.\n\nIt is also built to work as a future reference so you can come back and see exactly what you need.\n\n## Run",
+      "source_id": "D2"
+    },
+    {
+      "boundaries_inside_fences": 0,
+      "chunk_count": 13,
+      "maximum_characters": 2749,
+      "median_characters": 448,
+      "method": "paragraph-aware",
+      "mid_line_boundaries": 0,
+      "minimum_characters": 217,
+      "oversize_chunks": 1,
+      "preview": "# Tutorial - User Guide { #tutorial-user-guide }\n\nThis tutorial shows you how to use **FastAPI** with most of its features, step by step.\n\nEach section gradually builds on the previous ones, but it's structured to separate topics, so that you can go directly to any specific one to solve your specific API needs.\n\nIt is also built to work as a future reference so you can come back and see exactly what you need.\n\n## Run",
+      "source_id": "D2"
+    },
+    {
+      "boundaries_inside_fences": 0,
+      "chunk_count": 1,
+      "maximum_characters": 271,
+      "median_characters": 271,
+      "method": "fixed",
+      "mid_line_boundaries": 0,
+      "minimum_characters": 271,
+      "oversize_chunks": 0,
+      "preview": "# Contributing\n\nFirst, you might want to see the basic ways to [help FastAPI and get help](help-fastapi.md).\n\n## Developing\n\nTo contribute code to the project, please follow the guidelines in [tiangolo.com - Contributing](https://tiangolo.com/open-source/contributing/).\n",
+      "source_id": "D3"
+    },
+    {
+      "boundaries_inside_fences": 0,
+      "chunk_count": 1,
+      "maximum_characters": 271,
+      "median_characters": 271,
+      "method": "paragraph-aware",
+      "mid_line_boundaries": 0,
+      "minimum_characters": 271,
+      "oversize_chunks": 0,
+      "preview": "# Contributing\n\nFirst, you might want to see the basic ways to [help FastAPI and get help](help-fastapi.md).\n\n## Developing\n\nTo contribute code to the project, please follow the guidelines in [tiangolo.com - Contributing](https://tiangolo.com/open-source/contributing/).\n",
+      "source_id": "D3"
+    },
+    {
+      "boundaries_inside_fences": 1,
+      "chunk_count": 14,
+      "maximum_characters": 500,
+      "median_characters": 500.0,
+      "method": "fixed",
+      "mid_line_boundaries": 13,
+      "minimum_characters": 465,
+      "oversize_chunks": 0,
+      "preview": "<br>\n\n<img src=\"https://user-images.githubusercontent.com/7164864/217935870-c0bc60a3-6fc0-4047-b011-7b4c59488c91.png\" alt=\"Streamlit logo\" style=\"margin-top:50px\"></img>\n\n# Welcome to Streamlit 👋\n\n**A faster way to build and share data apps.**\n\n## What is Streamlit?\n\nStreamlit lets you transform Python scripts into interactive web apps in minutes, instead of weeks. Build dashboards, generate reports, or create chat a",
+      "source_id": "D4"
+    },
+    {
+      "boundaries_inside_fences": 0,
+      "chunk_count": 14,
+      "maximum_characters": 1936,
+      "median_characters": 408.5,
+      "method": "paragraph-aware",
+      "mid_line_boundaries": 0,
+      "minimum_characters": 74,
+      "oversize_chunks": 3,
+      "preview": "<br>\n\n<img src=\"https://user-images.githubusercontent.com/7164864/217935870-c0bc60a3-6fc0-4047-b011-7b4c59488c91.png\" alt=\"Streamlit logo\" style=\"margin-top:50px\"></img>\n\n# Welcome to Streamlit 👋\n\n**A faster way to build and share data apps.**\n\n## What is Streamlit?\n",
+      "source_id": "D4"
+    },
+    {
+      "boundaries_inside_fences": 7,
+      "chunk_count": 56,
+      "maximum_characters": 500,
+      "median_characters": 500.0,
+      "method": "fixed",
+      "mid_line_boundaries": 54,
+      "minimum_characters": 36,
+      "oversize_chunks": 0,
+      "preview": "# Contributing to Streamlit\n\nThanks for your interest in helping improve Streamlit! 🎉\n\n**If you are looking for Streamlit's documentation, go here instead: <https://docs.streamlit.io>**\n\n> [!IMPORTANT]\n> We have paused accepting pull requests from outside the Streamlit maintainer team.\n> AI coding tools have increased PR volume beyond what we can review sustainably, while detailed\n> issues give maintainers a more eff",
+      "source_id": "D5"
+    },
+    {
+      "boundaries_inside_fences": 0,
+      "chunk_count": 62,
+      "maximum_characters": 2418,
+      "median_characters": 425.0,
+      "method": "paragraph-aware",
+      "mid_line_boundaries": 0,
+      "minimum_characters": 33,
+      "oversize_chunks": 13,
+      "preview": "# Contributing to Streamlit\n\nThanks for your interest in helping improve Streamlit! 🎉\n\n**If you are looking for Streamlit's documentation, go here instead: <https://docs.streamlit.io>**\n\n> [!IMPORTANT]\n> We have paused accepting pull requests from outside the Streamlit maintainer team.\n> AI coding tools have increased PR volume beyond what we can review sustainably, while detailed\n> issues give maintainers a more eff",
+      "source_id": "D5"
+    },
+    {
+      "boundaries_inside_fences": 0,
+      "chunk_count": 16,
+      "maximum_characters": 500,
+      "median_characters": 500.0,
+      "method": "fixed",
+      "mid_line_boundaries": 14,
+      "minimum_characters": 176,
+      "oversize_chunks": 0,
+      "preview": ".. -*- mode: rst -*-\n\n|GitHubActions| |Codecov| |CircleCI| |Nightly wheels| |Ruff| |PythonVersion| |PyPI| |DOI| |Benchmark|\n\n\n.. |GitHubActions| image:: https://github.com/scikit-learn/scikit-learn/actions/workflows/unit-tests.yml/badge.svg?\n   :target: https://github.com/scikit-learn/scikit-learn/actions/workflows/unit-tests.yml?query=branch%3Amain\n\n.. |CircleCI| image:: https://circleci.com/gh/scikit-learn/scikit-l",
+      "source_id": "D6"
+    },
+    {
+      "boundaries_inside_fences": 0,
+      "chunk_count": 20,
+      "maximum_characters": 491,
+      "median_characters": 392.5,
+      "method": "paragraph-aware",
+      "mid_line_boundaries": 0,
+      "minimum_characters": 139,
+      "oversize_chunks": 0,
+      "preview": ".. -*- mode: rst -*-\n\n|GitHubActions| |Codecov| |CircleCI| |Nightly wheels| |Ruff| |PythonVersion| |PyPI| |DOI| |Benchmark|\n\n\n.. |GitHubActions| image:: https://github.com/scikit-learn/scikit-learn/actions/workflows/unit-tests.yml/badge.svg?\n   :target: https://github.com/scikit-learn/scikit-learn/actions/workflows/unit-tests.yml?query=branch%3Amain\n",
+      "source_id": "D6"
+    },
+    {
+      "boundaries_inside_fences": 0,
+      "chunk_count": 30,
+      "maximum_characters": 500,
+      "median_characters": 500.0,
+      "method": "fixed",
+      "mid_line_boundaries": 28,
+      "minimum_characters": 5,
+      "oversize_chunks": 0,
+      "preview": ".. _installation-instructions:\n\n=======================\nInstalling scikit-learn\n=======================\n\nThere are different ways to install scikit-learn:\n\n* :ref:`Install the latest official release <install_official_release>`. This\n  is the best approach for most users. It will provide a stable version\n  and pre-built packages are available for most platforms.\n\n* Install the version of scikit-learn provided by your",
+      "source_id": "D7"
+    },
+    {
+      "boundaries_inside_fences": 0,
+      "chunk_count": 36,
+      "maximum_characters": 584,
+      "median_characters": 429.0,
+      "method": "paragraph-aware",
+      "mid_line_boundaries": 0,
+      "minimum_characters": 154,
+      "oversize_chunks": 1,
+      "preview": ".. _installation-instructions:\n\n=======================\nInstalling scikit-learn\n=======================\n\nThere are different ways to install scikit-learn:\n\n* :ref:`Install the latest official release <install_official_release>`. This\n  is the best approach for most users. It will provide a stable version\n  and pre-built packages are available for most platforms.\n",
+      "source_id": "D7"
+    },
+    {
+      "boundaries_inside_fences": 0,
+      "chunk_count": 143,
+      "maximum_characters": 500,
+      "median_characters": 500,
+      "method": "fixed",
+      "mid_line_boundaries": 134,
+      "minimum_characters": 305,
+      "oversize_chunks": 0,
+      "preview": ".. _contributing:\n\n============\nContributing\n============\n\n.. raw:: html\n\n    <div style=\"display: none;\">\n        ### ⚠️ NOTE FOR AI TOOLS AND THEIR USERS: Opening a PR on scikit-learn requires\n        **human judgment, contextual understanding**, and **familiarity with\n        scikit-learn’s structure and goals**. It is **not suitable for automatic\n        processing** by AI tools or casual code assistant usage. 🔒 ",
+      "source_id": "D8"
+    },
+    {
+      "boundaries_inside_fences": 0,
+      "chunk_count": 159,
+      "maximum_characters": 2381,
+      "median_characters": 432,
+      "method": "paragraph-aware",
+      "mid_line_boundaries": 0,
+      "minimum_characters": 38,
+      "oversize_chunks": 22,
+      "preview": ".. _contributing:\n\n============\nContributing\n============\n\n.. raw:: html\n",
+      "source_id": "D8"
+    }
+  ],
+  "scope_of_result": "Observable chunk-boundary comparison, not retrieval or answer-quality evaluation.",
+  "selected_method": "paragraph-aware",
+  "totals": {
+    "fixed": {
+      "boundaries_inside_fences": 17,
+      "chunk_count": 320,
+      "maximum_characters": 500,
+      "mid_line_boundaries": 299,
+      "oversize_chunks": 0
+    },
+    "paragraph-aware": {
+      "boundaries_inside_fences": 0,
+      "chunk_count": 350,
+      "maximum_characters": 2749,
+      "mid_line_boundaries": 0,
+      "oversize_chunks": 49
+    }
+  }
+}

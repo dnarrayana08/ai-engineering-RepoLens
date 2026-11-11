@@ -2,7 +2,7 @@
 
 > Helps university students and beginner developers understand selected public GitHub repositories through document-grounded answers with source references.
 
-**Current status (27 October 2026):** Week 1 materials and all four required Week 2 planning deliverables are available in this repository. The application, final benchmark and evaluation results are planned; there is no runnable RepoLens application yet. Some repository-format and supporting-file items remain open in the checklist below.
+**Current status (11 November 2026):** Week 1/2 materials and the Topic 3 documentation-preparation pipeline are available. The pipeline processed all eight pinned sources into **350 traceable chunks**; two-run repeatability, export validation and 11 data-contract tests passed locally. The self-contained notebook was executed with a real local Jupyter kernel; Google Colab execution is not claimed. The RepoLens chatbot, embeddings, retrieval benchmark and answer-quality evaluation remain future work.
 
 ## Project Documents
 
@@ -15,6 +15,10 @@
 | Week 2 | [Evaluation criteria](docs/week2_evaluation_criteria.md) |
 | Week 2 | [V1 architecture diagram](docs/week2_architecture_v1.png) |
 | Week 2 | [Architecture decisions and traceability](docs/week2_architecture_decisions.md) |
+| Week 3 | [Runnable pipeline notebook](notebooks/week3_pipeline.ipynb) and [Colab/run guide](docs/week3_run_guide.md) |
+| Week 3 | [Data inventory](docs/week3_data_inventory.md) and [pipeline decisions](docs/week3_pipeline_decisions.md) |
+| Week 3 | [Pipeline diagram](docs/week3_pipeline_diagram.png) and [editable Draw.io source](docs/week3_pipeline_diagram.drawio) |
+| Week 3 | [Part B export](data/processed/prepared_text.jsonl), [lineage](data/week3_manifest.json) and [Part C evidence](data/pipeline_v1/documents/) |
 | Data and evaluation | [Source manifest](data/source_manifest.json) and [initial evaluation plan](evaluation/plan.md) |
 
 The Week 1 observation sheet and system map examine **Claude**, the system analysed in Parts A/B. The Week 2 architecture describes the proposed **RepoLens** application. Observations about Claude are not RepoLens test results.
@@ -69,21 +73,24 @@ Verified by successful HTTP retrieval on 22 October 2026. [Machine-readable mani
 - **streamlit/streamlit: Apache-2.0** - [verified repository license](https://raw.githubusercontent.com/streamlit/streamlit/f478c9783be8099f1d394d02dea77bd0697d93ea/LICENSE).
 - **scikit-learn/scikit-learn: BSD-3-Clause** - [verified repository license](https://raw.githubusercontent.com/scikit-learn/scikit-learn/718eedb7af8678255de080d4748d9f67e321ba41/COPYING).
 
-The upstream documentation dataset is represented by URLs and metadata; its document copies have not been committed. Before later redistribution, check file-level exceptions and preserve the applicable license, copyright, disclaimer and attribution/change notices. External links and assets are not included automatically; record a URL if permission is uncertain. See the [project scope](docs/week1_project_scope.md) for collection limits.
+Week 3 now includes derived text chunks from the eight selected documents. Original raw downloads remain ignored and can be reacquired from the fixed URLs. The [attribution and modification notice](data/ATTRIBUTION.md), [source-rights review](data/week3_rights_review.json) and retained licenses/Streamlit NOTICES accompany those exports. External linked assets and documents are not downloaded. See the [project scope](docs/week1_project_scope.md) for the original collection boundary.
 
 ## Weekly Progress
 
 | Week | Focus | Deliverable | Status |
 |---|---|---|---|
 | W1 | Project scoping | README, project scope, source manifest and initial evaluation plan | Available in GitHub |
-| W1 | Analyse an existing AI system | Observation sheet in Markdown and PDF | Uploaded; PDF includes evidence screenshots; Markdown image assets still need uploading |
-| W1 | Conceptual system map | System map and reflection in PDF | Uploaded; required PNG export still pending |
-| W1 | Repository setup | Public GitHub repository and planning files | Repository exists; missing folders and .gitignore listed below |
+| W1 | Analyse an existing AI system | Observation sheet in Markdown and PDF | Uploaded; Markdown evidence screenshots restored from the supplied PDF |
+| W1 | Conceptual system map | System map and reflection in PDF | PDF and PNG available; PNG extracted from the supplied map |
+| W1 | Repository setup | Public GitHub repository and planning files | Repository, planned folders and .gitignore available |
 | W1 | Course portal submission | Repository URL | Not verified in this repository |
 | W2 | Requirements and application scope | Section 0 framing, 7 FRs, 5 NFRs and 5 Responsible AI requirements | Planning document available in GitHub |
 | W2 | Evaluation criteria | 12 criteria, proposed metrics/thresholds and evaluation protocol | Planning document available in GitHub; tests not run |
-| W2 | V1 architecture and justification | Architecture PNG, 6 decisions and 12 traceability rows | Required files available in GitHub; linked editable Draw.io source still missing |
-| W3 onward | Implementation and evaluation | Data processing, retrieval, grounded answers, interface and measured evidence | Planned |
+| W2 | V1 architecture and justification | Architecture PNG, 6 decisions and 12 traceability rows | Required files and matching editable Draw.io source available |
+| W3 | Data engineering | Notebook, inventory, decisions, diagram, prepared exports and manifests | Implemented and verified locally; Colab run pending |
+| W3 | Preparation comparison | Fixed-size versus paragraph-aware splitting across 8 sources | 320 versus 350 chunks; fenced-block cuts 17 versus 0; 49 selected chunks exceed the soft size target |
+| W3 | Validation and repeatability | Same-environment reruns, CLI/notebook agreement and focused tests | PASS; 11 tests; no downstream answer/retrieval result claimed |
+| Later topics | Retrieval, grounded answers and interface | Embeddings/index, application and benchmark evaluation | Planned |
 
 ## Proposed AI Approach and Scope
 
@@ -91,40 +98,77 @@ Allowlisted Markdown/RST documentation -> cleaning and chunking -> embeddings an
 
 In scope: selected public documentation, natural-language Q&A, citations, a simple web UI and objective evaluation. Out of scope: entire-codebase analysis, arbitrary crawling, execution, automatic dependency installation, private repositories, autonomous modifications, pull requests and complex multi-agent workflows. FastAPI's contribution entry page links externally; detailed uncollected instructions are unsupported. Streamlit's pinned contribution policy must be respected.
 
-## Repository Structure
+## Week 3 Pipeline
 
-Current tracked files:
+[Open in Google Colab](https://colab.research.google.com/github/dnarrayana08/ai-engineering-RepoLens/blob/main/notebooks/week3_pipeline.ipynb) and select **Runtime > Run all**. Save the actual executed notebook and the export ZIP before the runtime resets. No model API key or package installation is required.
+
+The selected workflow is batch ETL: fixed documentation sources -> verified ingestion -> text inspection -> compared/chosen preparation -> validated JSONL -> source/output lineage -> repeatability check. Markdown/RST are read directly, preserving indentation and treating embedded instructions as inert text. The same configuration is used in Parts B and C.
+
+The measured structural comparison selected paragraph-aware splitting: it avoids observed fenced-block and mid-line cuts, but permits atomic blocks above the 500-character target (49 chunks; maximum 2,749 characters). This is preparation evidence, not proof of better retrieval or answers. See [decisions](docs/week3_pipeline_decisions.md) and [verification](docs/week3_verification.md).
+
+## Repository Structure
 
 ```text
 ai-engineering-RepoLens/
 ├── README.md
-├── data/
-│   └── source_manifest.json
+├── .gitignore
+├── src/
+│   └── week3_pipeline.py
+├── notebooks/
+│   └── week3_pipeline.ipynb
+├── tests/
+│   └── test_week3_pipeline.py
+├── prompts/
+│   └── .gitkeep
 ├── docs/
-│   ├── week1_observation_sheet.md
-│   ├── week1_observation_sheet.pdf
+│   ├── week1_observation_sheet.md / .pdf
+│   ├── week1_observation_assets/
 │   ├── week1_project_scope.md
-│   ├── week1_system_map.pdf
+│   ├── week1_system_map.pdf / .png
 │   ├── week2_requirements.md
 │   ├── week2_evaluation_criteria.md
-│   ├── week2_architecture_v1.png
-│   └── week2_architecture_decisions.md
+│   ├── week2_architecture_v1.png / .drawio
+│   ├── week2_architecture_decisions.md
+│   ├── week3_data_inventory.md
+│   ├── week3_pipeline_decisions.md
+│   ├── week3_pipeline_diagram.png / .drawio
+│   ├── week3_run_guide.md
+│   └── week3_verification.md
+├── data/
+│   ├── source_manifest.json
+│   ├── ATTRIBUTION.md
+│   ├── third_party/
+│   ├── week3_rights_review.json
+│   ├── week3_manifest.json
+│   ├── processed/
+│   │   ├── prepared_text.jsonl
+│   │   ├── inspection.json
+│   │   └── chunking_comparison.json
+│   └── pipeline_v1/documents/
+│       ├── prepared_text.jsonl
+│       ├── pipeline_manifest.json
+│       ├── repeatability_report.json
+│       └── test_report.json
 └── evaluation/
     └── plan.md
 ```
 
-### Remaining Repository and Submission Items
+`data/raw/` is created during execution and ignored in Git. The grouped `.md / .pdf` and `.png / .drawio` entries above represent separate files.
 
-- [ ] Export the existing Week 1 system map as `docs/week1_system_map.png`, as required by the lab. The PDF is already available above.
-- [ ] Add `docs/week1_observation_assets/evidence_1.jpg`, `evidence_2.jpg` and `evidence_3.jpg` to restore the observation Markdown's embedded screenshots. The observation PDF currently preserves them.
-- [ ] Upload `docs/week2_architecture_v1.drawio` so the editable-source links in the Week 2 documents resolve. The required architecture PNG is already present.
-- [ ] Add the planned `src/`, `notebooks/` and `prompts/` directories, using `.gitkeep` files while empty.
-- [ ] Add `.gitignore` rules for credentials, `.env` files, virtual environments, caches, raw document copies and generated indices/logs before implementation.
-- [ ] Confirm the actual course portal submission. File presence in GitHub does not establish that submission occurred.
+### Repository and Submission Checklist
+
+- [x] Week 1 observation screenshots restored from the uploaded PDF.
+- [x] Week 1 map PNG extracted from the uploaded map PDF; original PDF/reflection retained.
+- [x] Matching Week 2 editable Draw.io source restored.
+- [x] Required working folders and credential/cache exclusions added.
+- [x] Topic 3 notebook, inventory, diagram, decisions, Part B/Part C outputs and manifests prepared and verified locally.
+- [x] Source licenses/notices and representation-change attribution retained with derived exports.
+- [ ] Run the notebook in Google Colab and save that actual execution evidence for the lab. Local execution has already been verified; it must not be relabelled as Colab.
+- [ ] Confirm actual course portal submissions. Repository file presence does not establish portal submission.
 
 ## Planned Evaluation
 
-Prepare 6 development questions and freeze 30 test questions (24 answerable, 6 unsupported). Annotate reference answers and required source passages. Compare semantic retrieval against BM25 on the same sources/chunks; compare RAG explanations against the same generator with BM25 context. Measure Recall@5, full answer correctness, citation accuracy, groundedness, abstention and end-to-end latency. The [initial evaluation plan](evaluation/plan.md) records the Week 1 design. The [Week 2 evaluation criteria](docs/week2_evaluation_criteria.md) refine the acceptance rules, repeat-run scoring, privacy/safety checks, failure handling and proposed cost cap; use those criteria for the later evaluation. There are no measured results yet.
+Prepare 6 development questions and freeze 30 test questions (24 answerable, 6 unsupported). Annotate reference answers and required source passages. Compare semantic retrieval against BM25 on the same sources/chunks; compare RAG explanations against the same generator with BM25 context. Measure Recall@5, full answer correctness, citation accuracy, groundedness, abstention and end-to-end latency. The [initial evaluation plan](evaluation/plan.md) records the Week 1 design. The [Week 2 evaluation criteria](docs/week2_evaluation_criteria.md) refine the acceptance rules, repeat-run scoring, privacy/safety checks, failure handling and proposed cost cap; use those criteria for the later evaluation. No application-level retrieval or answer-quality results have been measured; Week 3 reports only data-preparation and validation evidence.
 
 ## References
 
