@@ -1,0 +1,412 @@
+{
+  "execution": "Previously completed local command-line execution; preserved separately from actual Colab records",
+  "pipeline_manifest": {
+    "configuration": {
+      "cleaning": "UTF-8 strict; normalize CRLF/CR to LF; preserve indentation, links and directives as inert text",
+      "method": "paragraph-aware",
+      "overlap": 0,
+      "paragraph_policy": "Do not split atomic paragraphs or fenced blocks; 500 characters is a soft target",
+      "target_characters": 500
+    },
+    "data_type": "documents",
+    "execution_environment": {
+      "colab": false,
+      "python": "3.12.14",
+      "system": "Darwin"
+    },
+    "generated_at_utc": "2026-11-11T04:52:08.114589+00:00",
+    "implementation_sha256": "5ec0c744f9c8e120c302392b08d3ecf64fe9fcc83d03940eeeacf1382f9d53d4",
+    "inspection": [
+      {
+        "bytes": 22228,
+        "characters": 22011,
+        "fenced_blocks": 12,
+        "heading_count": 29,
+        "headings_preview": [
+          "Sponsors",
+          "Keystone Sponsor",
+          "Gold Sponsors",
+          "Silver Sponsors",
+          "Opinions",
+          "FastAPI mini documentary"
+        ],
+        "id": "D1",
+        "limitations": "Source markup retained; linked assets/includes not fetched; RST directives never executed.",
+        "lines": 533,
+        "non_ascii_characters": 106,
+        "preview": "<p align=\"center\">\n  <a href=\"https://fastapi.tiangolo.com\"><img src=\"https://fastapi.tiangolo.com/img/logo-margin/logo-teal.png\" alt=\"FastAPI\"></a>\n</p>\n<p align=\"center\">\n    <em>FastAPI framework, high performance, easy to learn, fast to code, ready for production</em>\n</p>\n<p align=\"center\">\n<a href=\"https://github.com/fastapi/fastapi/actions?query=workflow%3ATest+event%3Apush+branch%3Amaster\">\n    <img src=\"http",
+        "relative_path": "data/raw/fastapi/fastapi/README.md",
+        "repository": "fastapi/fastapi",
+        "source_sha256": "9b44160901909b924c7520227f5cdb44f7785560957b73987ff12379b3f82faa"
+      },
+      {
+        "bytes": 7464,
+        "characters": 7458,
+        "fenced_blocks": 3,
+        "heading_count": 5,
+        "headings_preview": [
+          "Tutorial - User Guide { #tutorial-user-guide }",
+          "Run the code { #run-the-code }",
+          "Install FastAPI { #install-fastapi }",
+          "AI Agent Skills { #ai-agent-skills }",
+          "Advanced User Guide { #advanced-user-guide }"
+        ],
+        "id": "D2",
+        "limitations": "Source markup retained; linked assets/includes not fetched; RST directives never executed.",
+        "lines": 141,
+        "non_ascii_characters": 2,
+        "preview": "# Tutorial - User Guide { #tutorial-user-guide }\n\nThis tutorial shows you how to use **FastAPI** with most of its features, step by step.\n\nEach section gradually builds on the previous ones, but it's structured to separate topics, so that you can go directly to any specific one to solve your specific API needs.\n\nIt is also built to work as a future reference so you can come back and see exactly what you need.\n\n## Run",
+        "relative_path": "data/raw/fastapi/fastapi/docs/en/docs/tutorial/index.md",
+        "repository": "fastapi/fastapi",
+        "source_sha256": "22d619c9497c8e88094fdba2b297c91ed29b21459b658a3586ae39a95fd65335"
+      },
+      {
+        "bytes": 271,
+        "characters": 271,
+        "fenced_blocks": 0,
+        "heading_count": 2,
+        "headings_preview": [
+          "Contributing",
+          "Developing"
+        ],
+        "id": "D3",
+        "limitations": "Source markup retained; linked assets/includes not fetched; RST directives never executed.",
+        "lines": 7,
+        "non_ascii_characters": 0,
+        "preview": "# Contributing\n\nFirst, you might want to see the basic ways to [help FastAPI and get help](help-fastapi.md).\n\n## Developing\n\nTo contribute code to the project, please follow the guidelines in [tiangolo.com - Contributing](https://tiangolo.com/open-source/contributing/).\n",
+        "relative_path": "data/raw/fastapi/fastapi/docs/en/docs/contributing.md",
+        "repository": "fastapi/fastapi",
+        "source_sha256": "6dc18b05e194e864a9fd0353ae68bf89d66a531517306a38687f7b2d1b577126"
+      },
+      {
+        "bytes": 7008,
+        "characters": 6965,
+        "fenced_blocks": 4,
+        "heading_count": 12,
+        "headings_preview": [
+          "Welcome to Streamlit \ud83d\udc4b",
+          "What is Streamlit?",
+          "Why choose Streamlit?",
+          "Installation",
+          "Quickstart",
+          "A little example"
+        ],
+        "id": "D4",
+        "limitations": "Source markup retained; linked assets/includes not fetched; RST directives never executed.",
+        "lines": 150,
+        "non_ascii_characters": 22,
+        "preview": "<br>\n\n<img src=\"https://user-images.githubusercontent.com/7164864/217935870-c0bc60a3-6fc0-4047-b011-7b4c59488c91.png\" alt=\"Streamlit logo\" style=\"margin-top:50px\"></img>\n\n# Welcome to Streamlit \ud83d\udc4b\n\n**A faster way to build and share data apps.**\n\n## What is Streamlit?\n\nStreamlit lets you transform Python scripts into interactive web apps in minutes, instead of weeks. Build dashboards, generate reports, or create chat a",
+        "relative_path": "data/raw/streamlit/streamlit/README.md",
+        "repository": "streamlit/streamlit",
+        "source_sha256": "45b271be0490145de6b0c245e2dc0ee5518b38f07eab5bc2419dd2c3923cd87e"
+      },
+      {
+        "bytes": 27548,
+        "characters": 27536,
+        "fenced_blocks": 31,
+        "heading_count": 54,
+        "headings_preview": [
+          "Contributing to Streamlit",
+          "Ways to contribute",
+          "Report a bug",
+          "Request a feature",
+          "Help improve existing issues and specs",
+          "Extend the Streamlit ecosystem"
+        ],
+        "id": "D5",
+        "limitations": "Source markup retained; linked assets/includes not fetched; RST directives never executed.",
+        "lines": 594,
+        "non_ascii_characters": 5,
+        "preview": "# Contributing to Streamlit\n\nThanks for your interest in helping improve Streamlit! \ud83c\udf89\n\n**If you are looking for Streamlit's documentation, go here instead: <https://docs.streamlit.io>**\n\n> [!IMPORTANT]\n> We have paused accepting pull requests from outside the Streamlit maintainer team.\n> AI coding tools have increased PR volume beyond what we can review sustainably, while detailed\n> issues give maintainers a more eff",
+        "relative_path": "data/raw/streamlit/streamlit/CONTRIBUTING.md",
+        "repository": "streamlit/streamlit",
+        "source_sha256": "b101612cadc408d297d342aac0ab3be4a8ad9d016b6699ef4a257f1d44109a76"
+      },
+      {
+        "bytes": 7676,
+        "characters": 7676,
+        "fenced_blocks": 0,
+        "heading_count": 19,
+        "headings_preview": [
+          "Installation",
+          "Dependencies",
+          "User installation",
+          "Changelog",
+          "Development",
+          "Important links"
+        ],
+        "id": "D6",
+        "limitations": "Source markup retained; linked assets/includes not fetched; RST directives never executed.",
+        "lines": 217,
+        "non_ascii_characters": 0,
+        "preview": ".. -*- mode: rst -*-\n\n|GitHubActions| |Codecov| |CircleCI| |Nightly wheels| |Ruff| |PythonVersion| |PyPI| |DOI| |Benchmark|\n\n\n.. |GitHubActions| image:: https://github.com/scikit-learn/scikit-learn/actions/workflows/unit-tests.yml/badge.svg?\n   :target: https://github.com/scikit-learn/scikit-learn/actions/workflows/unit-tests.yml?query=branch%3Amain\n\n.. |CircleCI| image:: https://circleci.com/gh/scikit-learn/scikit-l",
+        "relative_path": "data/raw/scikit-learn/scikit-learn/README.rst",
+        "repository": "scikit-learn/scikit-learn",
+        "source_sha256": "3e0c151adde02aa2501477a7c2a17a87888abe58178c09a2a8eff794bbee3221"
+      },
+      {
+        "bytes": 14525,
+        "characters": 14505,
+        "fenced_blocks": 0,
+        "heading_count": 15,
+        "headings_preview": [
+          "Installing scikit-learn",
+          "Installing the latest release",
+          "Third party distributions of scikit-learn",
+          "Alpine Linux",
+          "Arch Linux",
+          "Debian/Ubuntu"
+        ],
+        "id": "D7",
+        "limitations": "Source markup retained; linked assets/includes not fetched; RST directives never executed.",
+        "lines": 426,
+        "non_ascii_characters": 10,
+        "preview": ".. _installation-instructions:\n\n=======================\nInstalling scikit-learn\n=======================\n\nThere are different ways to install scikit-learn:\n\n* :ref:`Install the latest official release <install_official_release>`. This\n  is the best approach for most users. It will provide a stable version\n  and pre-built packages are available for most platforms.\n\n* Install the version of scikit-learn provided by your",
+        "relative_path": "data/raw/scikit-learn/scikit-learn/doc/install.rst",
+        "repository": "scikit-learn/scikit-learn",
+        "source_sha256": "270cae08f287cd918f6ca9212c20b6b0984195e742369cb8c43136c524eff07d"
+      },
+      {
+        "bytes": 71320,
+        "characters": 71305,
+        "fenced_blocks": 0,
+        "heading_count": 30,
+        "headings_preview": [
+          "Contributing",
+          "Ways to contribute",
+          "New Contributors",
+          "Automated Contributions Policy",
+          "Licensing your contribution",
+          "Submitting a bug report or a feature request"
+        ],
+        "id": "D8",
+        "limitations": "Source markup retained; linked assets/includes not fetched; RST directives never executed.",
+        "lines": 1665,
+        "non_ascii_characters": 6,
+        "preview": ".. _contributing:\n\n============\nContributing\n============\n\n.. raw:: html\n\n    <div style=\"display: none;\">\n        ### \u26a0\ufe0f NOTE FOR AI TOOLS AND THEIR USERS: Opening a PR on scikit-learn requires\n        **human judgment, contextual understanding**, and **familiarity with\n        scikit-learn\u2019s structure and goals**. It is **not suitable for automatic\n        processing** by AI tools or casual code assistant usage. \ud83d\udd12 ",
+        "relative_path": "data/raw/scikit-learn/scikit-learn/doc/developers/contributing.rst",
+        "repository": "scikit-learn/scikit-learn",
+        "source_sha256": "e329bebf3986279ede0fc39dac46b36fd9e294c938ded19376481049824ac50d"
+      }
+    ],
+    "outputs": [
+      "data/pipeline_v1/documents/prepared_text.jsonl"
+    ],
+    "pipeline_version": "repolens-week3-v1",
+    "source_output_mapping": [
+      {
+        "access_rights": "MIT; retained notices in data/third_party; linked assets excluded",
+        "first_record_id": "D1-0001",
+        "known_limitations": "Simple text/heading handling; no execution, include expansion, semantic retrieval or answer evaluation.",
+        "last_record_id": "D1-0045",
+        "prepared_output": "data/pipeline_v1/documents/prepared_text.jsonl",
+        "prepared_sha256": "9a71abd2df1a530c6b58d06a41ccf329b23132310421a7766a661ad020834b66",
+        "processing_note": "paragraph-aware; UTF-8 strict; normalize CRLF/CR to LF; preserve indentation, links and directives as inert text",
+        "record_count": 45,
+        "repository": "fastapi/fastapi",
+        "source_filename": "data/raw/fastapi/fastapi/README.md",
+        "source_id": "D1",
+        "source_sha256": "9b44160901909b924c7520227f5cdb44f7785560957b73987ff12379b3f82faa",
+        "source_url": "https://raw.githubusercontent.com/fastapi/fastapi/4bdfbe4513084b19e22421ce1f916d8c1ac462a0/README.md",
+        "source_version": "4bdfbe4513084b19e22421ce1f916d8c1ac462a0"
+      },
+      {
+        "access_rights": "MIT; retained notices in data/third_party; linked assets excluded",
+        "first_record_id": "D2-0001",
+        "known_limitations": "Simple text/heading handling; no execution, include expansion, semantic retrieval or answer evaluation.",
+        "last_record_id": "D2-0013",
+        "prepared_output": "data/pipeline_v1/documents/prepared_text.jsonl",
+        "prepared_sha256": "9a71abd2df1a530c6b58d06a41ccf329b23132310421a7766a661ad020834b66",
+        "processing_note": "paragraph-aware; UTF-8 strict; normalize CRLF/CR to LF; preserve indentation, links and directives as inert text",
+        "record_count": 13,
+        "repository": "fastapi/fastapi",
+        "source_filename": "data/raw/fastapi/fastapi/docs/en/docs/tutorial/index.md",
+        "source_id": "D2",
+        "source_sha256": "22d619c9497c8e88094fdba2b297c91ed29b21459b658a3586ae39a95fd65335",
+        "source_url": "https://raw.githubusercontent.com/fastapi/fastapi/4bdfbe4513084b19e22421ce1f916d8c1ac462a0/docs/en/docs/tutorial/index.md",
+        "source_version": "4bdfbe4513084b19e22421ce1f916d8c1ac462a0"
+      },
+      {
+        "access_rights": "MIT; retained notices in data/third_party; linked assets excluded",
+        "first_record_id": "D3-0001",
+        "known_limitations": "Simple text/heading handling; no execution, include expansion, semantic retrieval or answer evaluation.",
+        "last_record_id": "D3-0001",
+        "prepared_output": "data/pipeline_v1/documents/prepared_text.jsonl",
+        "prepared_sha256": "9a71abd2df1a530c6b58d06a41ccf329b23132310421a7766a661ad020834b66",
+        "processing_note": "paragraph-aware; UTF-8 strict; normalize CRLF/CR to LF; preserve indentation, links and directives as inert text",
+        "record_count": 1,
+        "repository": "fastapi/fastapi",
+        "source_filename": "data/raw/fastapi/fastapi/docs/en/docs/contributing.md",
+        "source_id": "D3",
+        "source_sha256": "6dc18b05e194e864a9fd0353ae68bf89d66a531517306a38687f7b2d1b577126",
+        "source_url": "https://raw.githubusercontent.com/fastapi/fastapi/4bdfbe4513084b19e22421ce1f916d8c1ac462a0/docs/en/docs/contributing.md",
+        "source_version": "4bdfbe4513084b19e22421ce1f916d8c1ac462a0"
+      },
+      {
+        "access_rights": "Apache-2.0; retained notices in data/third_party; linked assets excluded",
+        "first_record_id": "D4-0001",
+        "known_limitations": "Simple text/heading handling; no execution, include expansion, semantic retrieval or answer evaluation.",
+        "last_record_id": "D4-0014",
+        "prepared_output": "data/pipeline_v1/documents/prepared_text.jsonl",
+        "prepared_sha256": "9a71abd2df1a530c6b58d06a41ccf329b23132310421a7766a661ad020834b66",
+        "processing_note": "paragraph-aware; UTF-8 strict; normalize CRLF/CR to LF; preserve indentation, links and directives as inert text",
+        "record_count": 14,
+        "repository": "streamlit/streamlit",
+        "source_filename": "data/raw/streamlit/streamlit/README.md",
+        "source_id": "D4",
+        "source_sha256": "45b271be0490145de6b0c245e2dc0ee5518b38f07eab5bc2419dd2c3923cd87e",
+        "source_url": "https://raw.githubusercontent.com/streamlit/streamlit/f478c9783be8099f1d394d02dea77bd0697d93ea/README.md",
+        "source_version": "f478c9783be8099f1d394d02dea77bd0697d93ea"
+      },
+      {
+        "access_rights": "Apache-2.0; retained notices in data/third_party; linked assets excluded",
+        "first_record_id": "D5-0001",
+        "known_limitations": "Simple text/heading handling; no execution, include expansion, semantic retrieval or answer evaluation.",
+        "last_record_id": "D5-0062",
+        "prepared_output": "data/pipeline_v1/documents/prepared_text.jsonl",
+        "prepared_sha256": "9a71abd2df1a530c6b58d06a41ccf329b23132310421a7766a661ad020834b66",
+        "processing_note": "paragraph-aware; UTF-8 strict; normalize CRLF/CR to LF; preserve indentation, links and directives as inert text",
+        "record_count": 62,
+        "repository": "streamlit/streamlit",
+        "source_filename": "data/raw/streamlit/streamlit/CONTRIBUTING.md",
+        "source_id": "D5",
+        "source_sha256": "b101612cadc408d297d342aac0ab3be4a8ad9d016b6699ef4a257f1d44109a76",
+        "source_url": "https://raw.githubusercontent.com/streamlit/streamlit/f478c9783be8099f1d394d02dea77bd0697d93ea/CONTRIBUTING.md",
+        "source_version": "f478c9783be8099f1d394d02dea77bd0697d93ea"
+      },
+      {
+        "access_rights": "BSD-3-Clause; retained notices in data/third_party; linked assets excluded",
+        "first_record_id": "D6-0001",
+        "known_limitations": "Simple text/heading handling; no execution, include expansion, semantic retrieval or answer evaluation.",
+        "last_record_id": "D6-0020",
+        "prepared_output": "data/pipeline_v1/documents/prepared_text.jsonl",
+        "prepared_sha256": "9a71abd2df1a530c6b58d06a41ccf329b23132310421a7766a661ad020834b66",
+        "processing_note": "paragraph-aware; UTF-8 strict; normalize CRLF/CR to LF; preserve indentation, links and directives as inert text",
+        "record_count": 20,
+        "repository": "scikit-learn/scikit-learn",
+        "source_filename": "data/raw/scikit-learn/scikit-learn/README.rst",
+        "source_id": "D6",
+        "source_sha256": "3e0c151adde02aa2501477a7c2a17a87888abe58178c09a2a8eff794bbee3221",
+        "source_url": "https://raw.githubusercontent.com/scikit-learn/scikit-learn/718eedb7af8678255de080d4748d9f67e321ba41/README.rst",
+        "source_version": "718eedb7af8678255de080d4748d9f67e321ba41"
+      },
+      {
+        "access_rights": "BSD-3-Clause; retained notices in data/third_party; linked assets excluded",
+        "first_record_id": "D7-0001",
+        "known_limitations": "Simple text/heading handling; no execution, include expansion, semantic retrieval or answer evaluation.",
+        "last_record_id": "D7-0036",
+        "prepared_output": "data/pipeline_v1/documents/prepared_text.jsonl",
+        "prepared_sha256": "9a71abd2df1a530c6b58d06a41ccf329b23132310421a7766a661ad020834b66",
+        "processing_note": "paragraph-aware; UTF-8 strict; normalize CRLF/CR to LF; preserve indentation, links and directives as inert text",
+        "record_count": 36,
+        "repository": "scikit-learn/scikit-learn",
+        "source_filename": "data/raw/scikit-learn/scikit-learn/doc/install.rst",
+        "source_id": "D7",
+        "source_sha256": "270cae08f287cd918f6ca9212c20b6b0984195e742369cb8c43136c524eff07d",
+        "source_url": "https://raw.githubusercontent.com/scikit-learn/scikit-learn/718eedb7af8678255de080d4748d9f67e321ba41/doc/install.rst",
+        "source_version": "718eedb7af8678255de080d4748d9f67e321ba41"
+      },
+      {
+        "access_rights": "BSD-3-Clause; retained notices in data/third_party; linked assets excluded",
+        "first_record_id": "D8-0001",
+        "known_limitations": "Simple text/heading handling; no execution, include expansion, semantic retrieval or answer evaluation.",
+        "last_record_id": "D8-0159",
+        "prepared_output": "data/pipeline_v1/documents/prepared_text.jsonl",
+        "prepared_sha256": "9a71abd2df1a530c6b58d06a41ccf329b23132310421a7766a661ad020834b66",
+        "processing_note": "paragraph-aware; UTF-8 strict; normalize CRLF/CR to LF; preserve indentation, links and directives as inert text",
+        "record_count": 159,
+        "repository": "scikit-learn/scikit-learn",
+        "source_filename": "data/raw/scikit-learn/scikit-learn/doc/developers/contributing.rst",
+        "source_id": "D8",
+        "source_sha256": "e329bebf3986279ede0fc39dac46b36fd9e294c938ded19376481049824ac50d",
+        "source_url": "https://raw.githubusercontent.com/scikit-learn/scikit-learn/718eedb7af8678255de080d4748d9f67e321ba41/doc/developers/contributing.rst",
+        "source_version": "718eedb7af8678255de080d4748d9f67e321ba41"
+      }
+    ],
+    "sources": [
+      {
+        "bytes": 22228,
+        "id": "D1",
+        "path": "data/raw/fastapi/fastapi/README.md",
+        "sha256": "9b44160901909b924c7520227f5cdb44f7785560957b73987ff12379b3f82faa"
+      },
+      {
+        "bytes": 7464,
+        "id": "D2",
+        "path": "data/raw/fastapi/fastapi/docs/en/docs/tutorial/index.md",
+        "sha256": "22d619c9497c8e88094fdba2b297c91ed29b21459b658a3586ae39a95fd65335"
+      },
+      {
+        "bytes": 271,
+        "id": "D3",
+        "path": "data/raw/fastapi/fastapi/docs/en/docs/contributing.md",
+        "sha256": "6dc18b05e194e864a9fd0353ae68bf89d66a531517306a38687f7b2d1b577126"
+      },
+      {
+        "bytes": 7008,
+        "id": "D4",
+        "path": "data/raw/streamlit/streamlit/README.md",
+        "sha256": "45b271be0490145de6b0c245e2dc0ee5518b38f07eab5bc2419dd2c3923cd87e"
+      },
+      {
+        "bytes": 27548,
+        "id": "D5",
+        "path": "data/raw/streamlit/streamlit/CONTRIBUTING.md",
+        "sha256": "b101612cadc408d297d342aac0ab3be4a8ad9d016b6699ef4a257f1d44109a76"
+      },
+      {
+        "bytes": 7676,
+        "id": "D6",
+        "path": "data/raw/scikit-learn/scikit-learn/README.rst",
+        "sha256": "3e0c151adde02aa2501477a7c2a17a87888abe58178c09a2a8eff794bbee3221"
+      },
+      {
+        "bytes": 14525,
+        "id": "D7",
+        "path": "data/raw/scikit-learn/scikit-learn/doc/install.rst",
+        "sha256": "270cae08f287cd918f6ca9212c20b6b0984195e742369cb8c43136c524eff07d"
+      },
+      {
+        "bytes": 71320,
+        "id": "D8",
+        "path": "data/raw/scikit-learn/scikit-learn/doc/developers/contributing.rst",
+        "sha256": "e329bebf3986279ede0fc39dac46b36fd9e294c938ded19376481049824ac50d"
+      }
+    ],
+    "validation": {
+      "exact_source_spans": true,
+      "non_whitespace_content_preserved": true,
+      "output_bytes": 480029,
+      "output_count": 1,
+      "output_sha256": "9a71abd2df1a530c6b58d06a41ccf329b23132310421a7766a661ad020834b66",
+      "provenance_verified": true,
+      "record_count": 350,
+      "source_count": 8,
+      "status": "PASS",
+      "unique_record_ids": 350
+    }
+  },
+  "repeatability_report": {
+    "checks": [
+      "sources",
+      "configuration",
+      "validation",
+      "source_output_mapping",
+      "implementation_sha256"
+    ],
+    "environment": {
+      "colab": false,
+      "python": "3.12.14",
+      "system": "Darwin"
+    },
+    "first_generated_at_utc": "2026-11-11T04:52:08.078529+00:00",
+    "limitation": "Same-environment repeatability smoke check; not cross-environment reproducibility or answer-quality proof.",
+    "part_b_matches_part_c": true,
+    "prepared_sha256": "9a71abd2df1a530c6b58d06a41ccf329b23132310421a7766a661ad020834b66",
+    "records": 350,
+    "run_count": 2,
+    "second_generated_at_utc": "2026-11-11T04:52:08.114589+00:00",
+    "sources": 8,
+    "status": "PASS"
+  }
+}

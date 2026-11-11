@@ -8,11 +8,11 @@
   },
   "data_type": "documents",
   "execution_environment": {
-    "colab": false,
-    "python": "3.12.14",
-    "system": "Darwin"
+    "colab": true,
+    "python": "3.13.18",
+    "system": "Linux"
   },
-  "generated_at_utc": "2026-11-11T04:52:08.114589+00:00",
+  "generated_at_utc": "2026-11-11T05:05:51.549487+00:00",
   "implementation_sha256": "5ec0c744f9c8e120c302392b08d3ecf64fe9fcc83d03940eeeacf1382f9d53d4",
   "inspection": [
     {

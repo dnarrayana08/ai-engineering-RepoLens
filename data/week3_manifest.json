@@ -6,7 +6,7 @@
     "paragraph_policy": "Do not split atomic paragraphs or fenced blocks; 500 characters is a soft target",
     "target_characters": 500
   },
-  "generated_at_utc": "2026-11-11T04:52:08.037763+00:00",
+  "generated_at_utc": "2026-11-11T05:05:51.058379+00:00",
   "pipeline_version": "repolens-week3-v1",
   "purpose": "Part B preparation lineage; all eight sources map into one combined JSONL with stable source IDs",
   "records": [

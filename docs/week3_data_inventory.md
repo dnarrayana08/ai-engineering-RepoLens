@@ -43,7 +43,7 @@ Detailed machine-readable inspection is in [inspection.json](../data/processed/i
 | data/raw/<owner>/<repository>/<original path> | Unmodified pinned download bytes; reacquired from source URLs for each fresh notebook run. | Ignored in Git; not needed for redistribution because URLs/hashes allow reacquisition. |
 | data/processed/prepared_text.jsonl | Part B combined export; 350 records across 8 sources. | Committed with upstream licenses, complete Streamlit NOTICES and the prominent modification notice. |
 | data/week3_manifest.json | Part B source-to-prepared-output provenance with per-source record ranges. | Committed; contains project-source metadata, not secrets. |
-| data/pipeline_v1/documents/ | Part C prepared export, execution manifest and two-run repeatability report. | Committed; local execution is identified explicitly. |
+| data/pipeline_v1/documents/ | Part C prepared export, execution manifest and two-run repeatability report. | Committed; actual Colab run records and separately identified local verification. |
 | data/third_party/ and data/ATTRIBUTION.md | Retained licenses/notices, owners and representation changes. | Keep with exported derived text. |
 
 ## Source Rights and Provenance Review
@@ -54,6 +54,6 @@ SHA-256 proves that downloaded bytes match the chosen snapshot; it is not proof 
 
 ## Execution and Quality Status
 
-The command-line pipeline and a fresh real Jupyter-kernel execution of the self-contained notebook were run locally. Their prepared exports match byte-for-byte. A Google Colab execution is **not** claimed. The notebook is ready for Runtime > Run all in Colab without model keys or package installation.
+The command-line pipeline, a fresh local Jupyter-kernel execution, and Google Colab independently produced byte-identical prepared exports. All 14 Colab code cells completed on 11 November 2026 (Python 3.13.18, Linux). Actual Colab manifests are archived in the final notebook output and committed under the canonical manifest paths; local evidence is preserved separately. No model keys or package installation were needed.
 
 Basic checks passed for all 350 records: non-empty text, unique record IDs, exact source spans, all 8 source identities, source hashes, export round-trip and preservation of non-whitespace content. This is not a Topic 4 comprehensive quality assessment, a retrieval benchmark or an answer-accuracy result.

@@ -2,7 +2,7 @@
 
 > Helps university students and beginner developers understand selected public GitHub repositories through document-grounded answers with source references.
 
-**Current status (11 November 2026):** Week 1/2 materials and the Topic 3 documentation-preparation pipeline are available. The pipeline processed all eight pinned sources into **350 traceable chunks**; two-run repeatability, export validation and 11 data-contract tests passed locally. The self-contained notebook was executed with a real local Jupyter kernel; Google Colab execution is not claimed. The RepoLens chatbot, embeddings, retrieval benchmark and answer-quality evaluation remain future work.
+**Current status (11 November 2026):** Week 1/2 materials and the Topic 3 documentation-preparation pipeline are available. The pipeline processed all eight pinned sources into **350 traceable chunks**; two-run repeatability, export validation and 11 data-contract tests passed locally. The self-contained notebook also completed all 14 code cells in Google Colab, with actual outputs and manifests saved; both environments produced identical prepared bytes. The RepoLens chatbot, embeddings, retrieval benchmark and answer-quality evaluation remain future work.
 
 ## Project Documents
 
@@ -87,7 +87,7 @@ Week 3 now includes derived text chunks from the eight selected documents. Origi
 | W2 | Requirements and application scope | Section 0 framing, 7 FRs, 5 NFRs and 5 Responsible AI requirements | Planning document available in GitHub |
 | W2 | Evaluation criteria | 12 criteria, proposed metrics/thresholds and evaluation protocol | Planning document available in GitHub; tests not run |
 | W2 | V1 architecture and justification | Architecture PNG, 6 decisions and 12 traceability rows | Required files and matching editable Draw.io source available |
-| W3 | Data engineering | Notebook, inventory, decisions, diagram, prepared exports and manifests | Implemented and verified locally; Colab run pending |
+| W3 | Data engineering | Notebook, inventory, decisions, diagram, prepared exports and manifests | Implemented and verified locally and in Google Colab |
 | W3 | Preparation comparison | Fixed-size versus paragraph-aware splitting across 8 sources | 320 versus 350 chunks; fenced-block cuts 17 versus 0; 49 selected chunks exceed the soft size target |
 | W3 | Validation and repeatability | Same-environment reruns, CLI/notebook agreement and focused tests | PASS; 11 tests; no downstream answer/retrieval result claimed |
 | Later topics | Retrieval, grounded answers and interface | Embeddings/index, application and benchmark evaluation | Planned |
@@ -163,7 +163,7 @@ ai-engineering-RepoLens/
 - [x] Required working folders and credential/cache exclusions added.
 - [x] Topic 3 notebook, inventory, diagram, decisions, Part B/Part C outputs and manifests prepared and verified locally.
 - [x] Source licenses/notices and representation-change attribution retained with derived exports.
-- [ ] Run the notebook in Google Colab and save that actual execution evidence for the lab. Local execution has already been verified; it must not be relabelled as Colab.
+- [x] Run all 14 notebook code cells in Google Colab and save actual execution outputs and manifests.
 - [ ] Confirm actual course portal submissions. Repository file presence does not establish portal submission.
 
 ## Planned Evaluation

@@ -1,6 +1,6 @@
 # RepoLens Week 3 Pipeline Decisions and Traceability
 
-Date 11 November 2026. This records the **executed** V1 documentation-preparation workflow, rather than a proposed chatbot implementation. Local command-line and Jupyter executions are distinguished from an unperformed Colab run. The notebook and pipeline source are the executable engineering record.
+Date 11 November 2026. This records the **executed** V1 documentation-preparation workflow, rather than a proposed chatbot implementation. Local command-line/Jupyter verification and the actual Google Colab execution are identified separately. The notebook and pipeline source are the executable engineering record.
 
 ## Traceability to Topic 2
 
@@ -86,7 +86,7 @@ The [pipeline diagram](week3_pipeline_diagram.png) documents the actual selected
 
 **Actual prepared-output SHA-256:** `9a71abd2df1a530c6b58d06a41ccf329b23132310421a7766a661ad020834b66`.
 
-The notebook uses the same embedded source implementation as `src/week3_pipeline.py`, identified by SHA-256 in each run. Source data and licenses are downloaded by fixed URL and verified; executable pipeline code is embedded, not fetched from an arbitrary branch. A real local Jupyter execution of all code cells is retained in the notebook. Its independently acquired exports match the command-line output. Colab execution is not claimed; the notebook can be opened in Colab and rerun without installation or model keys.
+The notebook uses the same embedded source implementation as `src/week3_pipeline.py`, identified by SHA-256 in each run. Source data and licenses are downloaded by fixed URL and verified; executable pipeline code is embedded, not fetched from an arbitrary branch. The saved notebook contains the actual successful Google Colab execution of all 14 code cells, including a final cell archiving runtime manifests. Independent local command-line and 13-cell Jupyter executions produced identical prepared bytes. Colab used Python 3.13.18 on Linux; local verification used Python 3.12.14 on Darwin. This observed agreement is not a guarantee for every future environment. No package installation or model keys were needed.
 
 ## Repeatability and Test Evidence
 

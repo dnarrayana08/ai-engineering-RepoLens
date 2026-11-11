@@ -1,13 +1,13 @@
 # RepoLens Week 3 Verification Record
 
-Review date 11 November 2026. **Local execution completed; Google Colab execution and course portal submission are not claimed.**
+Review date 11 November 2026. **Local and Google Colab executions completed. Course portal submission remains outstanding.**
 
 ## Required Lab Deliverables
 
 | Lab stage | Delivered evidence |
 |---|---|
 | Topic 2 requirements to data | FR2, FR3 and RAI5 mapped to the eight existing approved sources in the data inventory. |
-| Connected coding workspace | Notebook runs in Colab without model keys or package installation; actual saved evidence is from a local Jupyter kernel. |
+| Connected coding workspace | Actual Google Colab execution saved: 14 code cells completed without errors, model keys or package installation. |
 | Ingestion and inspection | All 8 pinned files acquired with expected SHA-256 matches; actual previews and source properties saved. |
 | Relevant pathway only | Pathway A explicitly adapted to Markdown/RST; no unrelated data modalities or dummy dataset. |
 | Part B comparison | Both fixed and paragraph-aware methods executed on the same sources; real counts and samples recorded. |
@@ -30,7 +30,7 @@ Review date 11 November 2026. **Local execution completed; Google Colab executio
 
 ## Execution and Contract Evidence
 
-The command-line implementation executed successfully and ran the integrated pipeline twice. A fresh real Jupyter kernel then executed all **13 code cells** in the self-contained notebook; all completed with no cell errors. Its independently acquired/prepared dataset is byte-identical to the command-line export. Its own two pipeline runs passed repeatability checks. Source version, configuration, output hashes/counts and source/output mappings were compared; timestamps may differ.
+The command-line implementation executed successfully and ran the integrated pipeline twice. A fresh real Jupyter kernel then executed all **13 code cells** in the self-contained notebook; all completed with no cell errors. Its independently acquired/prepared dataset is byte-identical to the command-line export. Its own two pipeline runs passed repeatability checks. Google Colab then completed all **14 code cells**, including the final manifest-archive cell, using Python 3.13.18 on Linux. The saved notebook outputs are this actual Colab execution; the original 13 processing/export code cells are unchanged. Its two runs at 05:05:51.388925 and 05:05:51.549487 UTC on 11 November 2026 passed, and its prepared bytes match both local executions. Canonical manifests were extracted directly from the final Colab output; the previous local manifest/report are retained in `data/pipeline_v1/documents/local_verification_report.json`. Source version, configuration, output hashes/counts and source/output mappings were compared; timestamps may differ.
 
 The focused **11-test suite passed**, with zero errors/failures. It checks source allowlisting, tampered/missing input, empty/binary-like text, fence/indentation preservation, RST headings, invalid configuration, duplicate/wrong-repository records, full corpus round-trip/content coverage and the observed comparison choice. These are pipeline contracts, not model safety or answer-quality tests.
 
@@ -49,4 +49,4 @@ The focused **11-test suite passed**, with zero errors/failures. It checks sourc
 
 ## Remaining User Evidence
 
-The lab specifies Google Colab. Open the notebook's Colab link, run all cells and save that actual execution if a signed-in session is not available to the agent. Do not relabel local outputs as Colab. Portal submission must be confirmed by the student; no portal interaction or receipt is asserted.
+The required Google Colab execution is complete and saved in GitHub. Portal submission must be completed and confirmed by the student; no portal interaction or receipt is asserted.

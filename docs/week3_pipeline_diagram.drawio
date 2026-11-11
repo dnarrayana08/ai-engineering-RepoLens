@@ -8,7 +8,7 @@
         <mxCell id="title" value="&lt;b&gt;RepoLens Executed V1 Data Pipeline&lt;/b&gt;" style="text;html=1;fontSize=39;align=left;" vertex="1" parent="1">
           <mxGeometry x="60" y="30" width="1670" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="subtitle" value="Topic 3 | Pathway A adapted for Markdown / RST | Local execution verified; no Colab run claimed" style="text;html=1;fontSize=22;align=left;" vertex="1" parent="1">
+        <mxCell id="subtitle" value="Topic 3 | Pathway A adapted for Markdown / RST | Verified locally and in Google Colab | 350 traceable chunks" style="text;html=1;fontSize=22;align=left;" vertex="1" parent="1">
           <mxGeometry x="60" y="90" width="1670" height="45" as="geometry" />
         </mxCell>
         <mxCell id="S" value="&lt;b&gt;Approved sources&lt;/b&gt;&lt;br&gt;&lt;br&gt;8 fixed-commit documents&lt;br&gt;3 repositories; original URLs&lt;br&gt;FR2 / FR3 / RAI5" style="rounded=1;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;spacing=18;fontSize=21;fillColor=#EAF5EF;strokeColor=#5C9974;" vertex="1" parent="1">
